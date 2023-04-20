@@ -1,0 +1,23 @@
+[
+  {
+    "response": "OK",
+    "nfts": [
+      {
+        "chain": "ethereum",
+        "contract_address": "0x22d5f9b75c524fec1d6619787e582644cd4d7422",
+        "token_id": "203",
+        "metadata_url": null,
+        "metadata": null,
+        "file_url": null,
+        "animation_url": null,
+        "cached_file_url": null,
+        "cached_animation_url": null,
+        "creator_address": null,
+        "updated_date": "2022-12-24T04:01:34.624802",
+        "owner": null
+      }
+    ],
+    "contract": null,
+    "total": 1
+  }
+]
