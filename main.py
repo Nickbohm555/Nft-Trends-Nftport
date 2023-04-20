@@ -2,30 +2,61 @@ import requests
 from config import API_key
 import json
 
-
-'''
-STEP 1:
-Get transaction history of a collection
-'''
-
-# TO DO
-
-'''
-STEP 2:
-Get nfts from top 100 highest transactions (metadata + image)
-'''
-
-url = "https://api.nftport.xyz/v0/nfts/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d?chain=ethereum&page_number=1&page_size=50&include=metadata&refresh_metadata=false"
-
 headers = {
     "accept": "application/json",
     "Authorization": API_key
 }
 
+
+'''
+STEP 1:
+Get All transactions history of a collection. Using 'Retrieve All Transactions API. Get only sales'
+'''
+
+url = "https://api.nftport.xyz/v0/transactions?chain=ethereum&page_size=50&type=sale"
+
+response = requests.get(url, headers=headers)
+
+# TODO now have to sort based on price here 
+str = response.text
+res = json.loads(str)
+info = {}
+all_transactions = res['transactions']
+for transaction in all_transactions:
+    print('--------------------------')
+    print(transaction)
+    contract_address = transaction['nft']['contract_address']
+    print(contract_address)
+    price_usd = transaction['price_details']['price_usd']
+    print(price_usd)
+    info[contract_address] = price_usd
+
+
+sorted_transactions = sorted(info.items(), key=lambda x:x[1])
+
+print(sorted_transactions)
+print(len(sorted_transactions))
+
+with open("all_transactions.json", "w") as f:
+    json.dump(response.json(), f, indent=2)
+
+
+'''
+STEP 2:
+Get nfts from top 100 highest transactions (metadata + image) 'Retrieve NFT details' of specific contract address of NFT
+'''
+
+# Should have a list of all 100 contract addresses with highest transactions
+for i in range(100):
+    j = 0
+
+url = "https://api.nftport.xyz/v0/nfts/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d?chain=ethereum&page_number=1&page_size=50&include=metadata&refresh_metadata=false"
+
+
 response = requests.get(url, headers=headers)
 
 # print response to a file as json
-with open("response.json", "w") as f:
+with open("all_nfts.json", "w") as f:
     json.dump(response.json(), f, indent=2)
 
 
