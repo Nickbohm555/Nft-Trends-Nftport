@@ -32,7 +32,7 @@ for transaction in all_transactions:
     info[contract_address] = price_usd
 
 
-sorted_transactions = sorted(info.items(), key=lambda x:x[1])
+sorted_transactions = sorted(info.items(), key=lambda x:x[1], reverse=True)
 
 print(sorted_transactions)
 print(len(sorted_transactions))
@@ -47,17 +47,24 @@ Get nfts from top 100 highest transactions (metadata + image) 'Retrieve NFT deta
 '''
 
 # Should have a list of all 100 contract addresses with highest transactions
-for i in range(100):
-    j = 0
-
-url = "https://api.nftport.xyz/v0/nfts/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d?chain=ethereum&page_number=1&page_size=50&include=metadata&refresh_metadata=false"
-
-
-response = requests.get(url, headers=headers)
+items = []
+for i in range(5):
+    contract_address = sorted_transactions[i][0]
+    print(contract_address)
+    
+    url = f"https://api.nftport.xyz/v0/nfts/{contract_address}?chain=ethereum&page_number=1&page_size=50&include=metadata&refresh_metadata=false"
+    
+    try:
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()
+        items.append(response.json())
+    except requests.exceptions.RequestException as e:
+        print(f"An error occurred: {e}")
 
 # print response to a file as json
 with open("all_nfts.json", "w") as f:
-    json.dump(response.json(), f, indent=2)
+    json.dump(items, f, indent=2)
+
 
 
 '''
