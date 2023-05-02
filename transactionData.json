@@ -1,0 +1,205 @@
+{
+  "response": "OK",
+  "transactions": [
+    {
+      "type": "cancel_list",
+      "lister_address": "0xd1d49d39a319601e6bf8f96859b797dd1d7b466c",
+      "nft": {
+        "contract_type": "ERC721",
+        "contract_address": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+        "token_id": "567"
+      },
+      "price_details": {
+        "asset_type": "ETH"
+      },
+      "transaction_hash": "0xbb736ea75595122697681ade04b5ec9b5c88ef08b22b6998e7cac7e8d805bb03",
+      "block_hash": "0xf6a0f92a64ea61071df678ae1d3e8819107e201971f7d53e4440358ea020631e",
+      "block_number": 14795029,
+      "transaction_date": "2022-05-17T22:01:45",
+      "marketplace": "opensea"
+    },
+    {
+      "type": "sale",
+      "buyer_address": "0x9a5e2780204fb980a5a5714b4e6bf7a659343cbd",
+      "seller_address": "0x216de6b333da72376892f6c9c8577b7346628615",
+      "nft": {
+        "contract_type": "ERC721",
+        "contract_address": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+        "token_id": "567"
+      },
+      "quantity": 1,
+      "price_details": {
+        "asset_type": "ETH",
+        "price": 99.0,
+        "price_usd": 256361.42774643324
+      },
+      "transaction_hash": "0x135f9b4f903739f07b32941a915f55b66e3ff28daf793eb00bdfe02c558ca2ac",
+      "block_hash": "0x5093f3c3514dab28490112c93c1ce46b2635497c8f04dbf4115ab38f11473ce4",
+      "block_number": 14370504,
+      "transaction_date": "2022-03-12T07:12:57",
+      "marketplace": "opensea"
+    },
+    {
+      "type": "cancel_list",
+      "lister_address": "0x749bd6b114ba2e7a9092d4a293250e1f432ebc8a",
+      "nft": {
+        "contract_type": "ERC721",
+        "contract_address": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+        "token_id": "567"
+      },
+      "price_details": {
+        "asset_type": "ERC20",
+        "contract_address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "transaction_hash": "0x019a3e0aba86db9c73612ee23fb1f3b50cc82f759a4d9e8ec879c008a7995760",
+      "block_hash": "0x4aa906aacbaaf7ad7a67aed013daf2e66713b37fd1eeefea643888ebff184a89",
+      "block_number": 14030280,
+      "transaction_date": "2022-01-18T15:22:10",
+      "marketplace": "opensea"
+    },
+    {
+      "type": "cancel_list",
+      "lister_address": "0x749bd6b114ba2e7a9092d4a293250e1f432ebc8a",
+      "nft": {
+        "contract_type": "ERC721",
+        "contract_address": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+        "token_id": "567"
+      },
+      "price_details": {
+        "asset_type": "ETH"
+      },
+      "transaction_hash": "0x69b8b66cd92bc88303fccc15e3cd3f2c61236b44d634d0feb620dde5b4405bfa",
+      "block_hash": "0x1b2727e116a2dede3d5fa1e12958bd10988f4b6393ec171f2f98d2dd3a56ed7e",
+      "block_number": 13633923,
+      "transaction_date": "2021-11-17T16:02:05",
+      "marketplace": "opensea"
+    },
+    {
+      "type": "cancel_list",
+      "lister_address": "0x749bd6b114ba2e7a9092d4a293250e1f432ebc8a",
+      "nft": {
+        "contract_type": "ERC721",
+        "contract_address": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+        "token_id": "567"
+      },
+      "price_details": {
+        "asset_type": "ETH"
+      },
+      "transaction_hash": "0xba970f3341fac5dc1e64c1d26bc1d6d61e59754ed797354660f829128b37c2ec",
+      "block_hash": "0x9b617e16d4c4075de9140be88acc6170808bdf987e477b25aeb6745ad3407a4d",
+      "block_number": 13633919,
+      "transaction_date": "2021-11-17T16:01:20",
+      "marketplace": "opensea"
+    },
+    {
+      "type": "cancel_list",
+      "lister_address": "0x749bd6b114ba2e7a9092d4a293250e1f432ebc8a",
+      "nft": {
+        "contract_type": "ERC721",
+        "contract_address": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+        "token_id": "567"
+      },
+      "price_details": {
+        "asset_type": "ETH"
+      },
+      "transaction_hash": "0x6331231ddd9530302762cce8beda6f8b2da5ae41efaab7a230bb5fba11cfa97f",
+      "block_hash": "0x6b961d3bdecf99daba6d5a488124fef6c8b38508e46d6a9536d2300a7bfaaefd",
+      "block_number": 13157028,
+      "transaction_date": "2021-09-04T04:17:17",
+      "marketplace": "opensea"
+    },
+    {
+      "type": "sale",
+      "buyer_address": "0x749bd6b114ba2e7a9092d4a293250e1f432ebc8a",
+      "seller_address": "0x6491bce963fcae210b7c843c4829202dc2479c03",
+      "nft": {
+        "contract_type": "ERC721",
+        "contract_address": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+        "token_id": "567"
+      },
+      "quantity": 1,
+      "price_details": {
+        "asset_type": "ETH",
+        "price": 42.0,
+        "price_usd": 140299.47664143282
+      },
+      "transaction_hash": "0x2d5ae19b45fe3f763fcf43e95d3509e3a4c3a9ed3c8c49298d43674dd99f3353",
+      "block_hash": "0xd5db41de6a077b10cb5a2f632656c848f4265abbae307b35c041c7c9571f5fee",
+      "block_number": 13082000,
+      "transaction_date": "2021-08-23T14:08:51",
+      "marketplace": "opensea"
+    },
+    {
+      "type": "cancel_list",
+      "lister_address": "0x9ff8982d96a6ee2dce169b3335369362086bab3d",
+      "nft": {
+        "contract_type": "ERC721",
+        "contract_address": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+        "token_id": "567"
+      },
+      "price_details": {
+        "asset_type": "ETH"
+      },
+      "transaction_hash": "0x9eeea56d755cc5c05ea10d7c648b4c2230df033d8e3ca85e49c8b33a75083694",
+      "block_hash": "0xc03e7ad18ebb123dd203af8f44be6474299931de990e4034963e11ad36eb0435",
+      "block_number": 12636692,
+      "transaction_date": "2021-06-15T03:46:14",
+      "marketplace": "opensea"
+    },
+    {
+      "type": "cancel_list",
+      "lister_address": "0x9ff8982d96a6ee2dce169b3335369362086bab3d",
+      "nft": {
+        "contract_type": "ERC721",
+        "contract_address": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+        "token_id": "567"
+      },
+      "price_details": {
+        "asset_type": "ETH"
+      },
+      "transaction_hash": "0xd48d19fee460221026211619f9a9c9ba3c5b1a24a7ba930816b32a4ab7165599",
+      "block_hash": "0x3f30be283e837d7634cfef5fc9e4e59acd8f5f66fc33c0ac2ff29bf7ea8dac7f",
+      "block_number": 12636689,
+      "transaction_date": "2021-06-15T03:45:55",
+      "marketplace": "opensea"
+    },
+    {
+      "type": "cancel_list",
+      "lister_address": "0x9ff8982d96a6ee2dce169b3335369362086bab3d",
+      "nft": {
+        "contract_type": "ERC721",
+        "contract_address": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+        "token_id": "567"
+      },
+      "price_details": {
+        "asset_type": "ETH"
+      },
+      "transaction_hash": "0x1b61eed6728aa8b3be111a8b8953175b12ef837c7be799d3777d927fc7a4e183",
+      "block_hash": "0x4fbb02683dcc34bab0003626aec9f5c39b4b971e874b2cfd4050040418f85e64",
+      "block_number": 12636687,
+      "transaction_date": "2021-06-15T03:44:40",
+      "marketplace": "opensea"
+    },
+    {
+      "type": "sale",
+      "buyer_address": "0x50890e832fbf0cb59bada113ef42fbfd58f5ec1c",
+      "seller_address": "0x5c48b927f2488e5b0b15bbac6721b1e6dc007d68",
+      "nft": {
+        "contract_type": "ERC721",
+        "contract_address": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+        "token_id": "567"
+      },
+      "quantity": 1,
+      "price_details": {
+        "asset_type": "ETH",
+        "price": 0.16,
+        "price_usd": 455.2477434788053
+      },
+      "transaction_hash": "0x6b037cc92f001fa5dd8a0e16af816b4878df99f85f12b4afd6c0c43d7fed8d96",
+      "block_hash": "0x7d4cfca8f076325e3beb89ef7f8f61a71c760d7492fb40b32fcc12e76cd5efde",
+      "block_number": 12346213,
+      "transaction_date": "2021-05-01T04:40:17",
+      "marketplace": "opensea"
+    }
+  ]
+}
