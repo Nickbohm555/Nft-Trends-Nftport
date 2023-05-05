@@ -1,1 +1,4 @@
 config.py
+firebase_config.json
+__pycache__/
+/*.json
