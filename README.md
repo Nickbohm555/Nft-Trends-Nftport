@@ -1,6 +1,5 @@
 ### Nft-Trends-OpenSea
 
-
 ## Step 1: User Input - Get Count of NFT Collections
 
 - The program asks the user to input a count of NFT (Non-Fungible Token) collections to get.
@@ -8,7 +7,6 @@
 - The input function is used to receive user input and the int function is used to convert the input into an integer.
 - The prompt message provided to the user specifies that the input count should not exceed 50.
 - The count variable is later used in the processNFTs function to determine how many NFT collections to retrieve from an external source.
-
 
 ## Step 2: Getting NFTs - Processing NFTs
 
@@ -19,7 +17,6 @@
 - The processNFTs() function takes a number as input, which specifies the number of NFTs to process, and returns a list of processed NFTs.
 - The code limits the number of NFTs retrieved from each contract to 10.
 
-
 ## Step 3: Store NFT Data in Firebase
 
 - Store data in a Firebase database using the Firebase Admin SDK for Python.
@@ -29,7 +26,6 @@
 - The Firebase app is initialized with this certificate and the databaseURL using firebase_admin.initialize_app.
 - The writeFB function is defined to take in data and write it to the Firebase database.
 - The function loops through each item in the data list, which represents the NFTs, and pushes each item to the Firebase database using the set method.
-
 
 ## Step 4: User Input - Get Top NFTs to Analyze
 
@@ -50,7 +46,6 @@
 - The function creates a dictionary to store color counts and iterates through the contours to add each color to the dictionary or increment its count.
 - The function sorts the color counts by count in descending order and returns the 20 most common colors as a list.
 - Finally, the function displays the image with detected objects.
-
 
 ## Step 6: Analyzing NFTs - Top 5 Most Common Attributes
 
@@ -78,6 +73,3 @@
 - A dictionary is created to store color counts and iterate through the contours to add each color to the dictionary or increment its count
 - The color counts are sorted by count in descending order and the 20 most common colors are returned as a list
 - A bar chart of the top 5 most common colors for each image is displayed using the matplotlib library.
-
-
-
