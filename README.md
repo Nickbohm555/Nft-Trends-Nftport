@@ -1,4 +1,19 @@
-### Nft-Trends-OpenSea
+# Discovering NFT Trends w/ NFTPort Data, IPFS, & Property Analysis
+
+## Abstract
+NFT trend analysis can be valuable for numerous reasons. Firstly, it can provide insights into the popularity and demand for different types of NFTs, which can help creators and investors make informed decisions about what types of NFTs to create or invest in.
+
+Secondly, NFT trend analysis can also help identify patterns and trends in the NFT market, such as seasonal fluctuations or the impact of current events or cultural phenomena. Understanding these trends can provide valuable information to creators and investors on when and how to release their NFTs to maximize their exposure and potential profits.
+
+Finally, NFT trend analysis can also provide insights into the behavior of buyers and collectors in the NFT market, such as their preferences for certain marketplaces or their willingness to pay higher prices for certain types of NFTs. This information can help creators and investors better understand their target audience and make more informed decisions about pricing and distribution strategies.
+
+Overall, NFT trend analysis can be a valuable tool for anyone involved in the NFT market, providing valuable insights and information that can help maximize their success in this emerging digital asset space.
+
+## Background
+NFTs, or non-fungible tokens, are unique digital assets that are verified on a blockchain network, which ensures that the asset is one-of-a-kind and cannot be duplicated or replaced. NFTs are a rapidly growing sector in the digital asset space, with a lot of potential for creators and collectors alike.
+
+For this project, we used [NFTPort](https://www.nftport.xyz/) and their [API](https://docs.nftport.xyz/docs) to collect NFT data for analysis. NFTPort is a blockchain-based platform that simplifies the process of creating, managing, and selling NFTs for creators, artists, and businesses. NFTPort provides a user-friendly interface that enables creators to mint their NFTs and launch them on various marketplaces, such as OpenSea and Rarible, without needing technical knowledge of blockchain technology. The platform also offers features such as automatic royalties and access control, making it easier for creators to monetize their NFTs and control their distribution. With NFTPort, creators can tap into the growing market for NFTs and benefit from the increased demand for digital ownership and authenticity.
+
 
 ## Step 1: User Input - Get Count of NFT Collections
 
@@ -27,6 +42,9 @@
 - The writeFB function is defined to take in data and write it to the Firebase database.
 - The function loops through each item in the data list, which represents the NFTs, and pushes each item to the Firebase database using the set method.
 
+![Firebase Screenshot](https://github.com/Nickbohm555/Nft-Trends-Nftport/blob/main/firebase/firebase_setup.png)
+**NOTE:** Check [here](https://github.com/Nickbohm555/Nft-Trends-Nftport/blob/main/firebase/data_sample.json) for sample data from Firebase.
+
 ## Step 4: User Input - Get Top NFTs to Analyze
 
 - Retrieve the latest NFTs (non-fungible tokens) to analyze from a Firebase database.
@@ -46,6 +64,12 @@
 - The function creates a dictionary to store color counts and iterates through the contours to add each color to the dictionary or increment its count.
 - The function sorts the color counts by count in descending order and returns the 20 most common colors as a list.
 - Finally, the function displays the image with detected objects.
+
+**NOTE:** The pre-trained YOLO v3 weights file is too large to upload to GitHub, but you can download it to the `objectDetectionFiles` folder using this in your terminal:
+
+```python
+wget https://pjreddie.com/media/files/yolov3.weights
+```
 
 ## Step 6: Analyzing NFTs - Top 5 Most Common Attributes
 
@@ -73,3 +97,22 @@
 - A dictionary is created to store color counts and iterate through the contours to add each color to the dictionary or increment its count
 - The color counts are sorted by count in descending order and the 20 most common colors are returned as a list
 - A bar chart of the top 5 most common colors for each image is displayed using the matplotlib library.
+
+## Results
+![Results Screenshot](https://github.com/Nickbohm555/Nft-Trends-Nftport/blob/main/media/results.png)
+
+### Demo
+https://user-images.githubusercontent.com/89931114/236924723-2d070c2b-1d0b-4d27-a611-c30b4be58060.mp4
+
+## Future Work
+
+We believe this work can be extended for a number of future projects:
+- Analyze trends over time
+- Use the results to create an NFT
+- Make predictions about what kinds of NFTs will be popular in the future
+
+## Contributors
+- [Keir Keenan](https://github.com/keirkeenan)
+- [Nick Bohm](https://github.com/Nickbohm555)
+
+Check out our other projects!
